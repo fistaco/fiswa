@@ -19,6 +19,8 @@ public class GeneticAlgorithm {
     private GenomeFactory genomeFactory;
     private GenomeType genomeType;
 
+    private Genome bestGenome;
+
     public GeneticAlgorithm(int popSize, int gens, CrossoverType crossoverType, double crossoverRate,
                             double mutationRate, float optimalFitness, GenomeType genomeType) {
         this.popSize = popSize;
@@ -33,6 +35,8 @@ public class GeneticAlgorithm {
         this.random = new Random();
         this.genomeFactory = new GenomeFactory(this.random);
         this.genomeType = genomeType;
+
+        this.bestGenome = null;
     }
 
     public void run(List<Object> genomeInitialisationArgs) throws Exception {
@@ -62,6 +66,7 @@ public class GeneticAlgorithm {
         System.out.println(String.format("Best genome's fitness after %d generations: %f", gen, bestFitness));
         System.out.println("Best genome: ");
         bestGenome.print();
+        this.bestGenome = bestGenome;
     }
 
     /**

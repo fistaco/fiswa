@@ -32,7 +32,7 @@ public class GeneticAlgorithmController {
         var binaryGa = new GeneticAlgorithm(popSize, gens, CrossoverType.ONEPOINT, 0.5, 0.5, binaryStringLength, GenomeType.BINARYSTRING);
 
         binaryGa.run(genomeInitialisationArgs);
-        
+
         return "TODO";
     }
 }
