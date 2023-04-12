@@ -1,4 +1,5 @@
-import java.rmi.UnexpectedException;
+package com.example.entity;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

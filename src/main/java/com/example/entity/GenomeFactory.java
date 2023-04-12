@@ -1,3 +1,5 @@
+package com.example.entity;
+
 import java.util.List;
 import java.util.Random;
 
