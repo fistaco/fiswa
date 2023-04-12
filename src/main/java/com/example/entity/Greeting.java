@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.entity;
 
 /**
 * Represents a "Greeting" object with an {@code id} and string {@code content}.
